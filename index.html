@@ -36,26 +36,21 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
-              ><span>01</span>About Natours</a
+            <a href="#about" class="navigation__link" onclick={closeNav()}
+              ><span>01</span>About</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
-              ><span>02</span>Your benefits</a
+            <a href="#projects" class="navigation__link" onclick={closeNav()}
+              ><span>02</span>Projects</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"
-              ><span>03</span>Popular tours</a
+            <a href="#contact" class="navigation__link" onclick={closeNav()}
+              ><span>03</span>Contact</a
             >
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>Stories</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>05</span>Book now</a>
-          </li>
+          
         </ul>
       </nav>
     </div>
@@ -89,7 +84,7 @@
 
     <main>
       <!-- about section -->
-      <div class="about">
+      <div class="about" id="about">
         <div class="section">
           <div class="saucer"></div>
           <div class="cup">
@@ -128,7 +123,7 @@
       </div>
       <!-- about section -->
 
-      <div class="projects">
+      <div class="projects" id="projects">
         <div class="projects__card ">
           <div class="projects__card--img projects__card--color1">
             <img src="./img/portitem1.png" alt="" />
@@ -251,7 +246,7 @@
           </div>
         </div>
       </div>
-      <section class="contact" id="contacts">
+      <section class="contact" id="contact">
           <div class="contact__img contact__img--padding">
               <img src="./img/img.png" alt="" />
             </div>
@@ -296,5 +291,11 @@
       <div class="footer__txt">Designed and developed by Ammar Masood</div>
       <div class="footer__bottom">© 2019 Ammar Masood</div>
     </footer>
+    <script>
+       function closeNav(){
+          document.querySelector("#navi-toggle").checked=!1;
+          }
+      </script>
   </body>
+  
 </html>

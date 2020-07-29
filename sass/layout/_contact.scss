@@ -127,7 +127,7 @@
     background: none;
     border: none;
     border-bottom: 1px solid $color-tertiary-dark;
-    color: #ddd;
+    color: $color-tertiary-dark;
     font-size: 1.5rem;
 
     @include respond(big-desktop) {
