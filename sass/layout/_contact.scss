@@ -1,0 +1,212 @@
+//  container = form , form_body = screen_body, screen = form_screen, screen-body-item = form_body--item, app-title = form_title, form_contact = app-contact= app-form, app-form-cotact=form_app_group,
+//       app-form-control = form_app_control
+//       app-form-button = form_app_button
+
+.contact {
+  padding: 20px 0 20px 0;
+  display: flex;
+  min-height: 90vh;
+  font-family: "Dosis", sans-serif;
+  position: relative;
+
+  // background-color: black;
+  top: -2rem;
+  @include respond(phone) {
+    // width < 600?
+    min-height: 100vh; //1 rem = 9px, 9/16 = 50%
+  }
+}
+
+.contact__img {
+  &--padding {
+    padding: 0 0 5rem 10rem;
+    position: absolute;
+    @include respond(phone) {
+      padding: 5rem 0 10rem 0;
+    }
+  }
+  img {
+    height: 3rem;
+  }
+}
+
+.form {
+  flex: 0 1 90rem;
+  margin: auto;
+  padding: 10px;
+
+  @include respond(big-desktop) {
+    flex: 0 1 150rem;
+  }
+  // font-family: ;
+
+  &_screen {
+    position: relative;
+    // background: red;
+    border-radius: 15px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      border-radius: 15px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+  }
+
+  &_body {
+    display: flex;
+
+    &--item {
+      flex: 1;
+      padding: 8rem;
+
+      @include respond(big-desktop) {
+        padding: 12rem;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &_title {
+    // font-family: yellow;
+    display: flex;
+    font-family: "Dosis", sans-serif;
+    flex-direction: column;
+    position: relative;
+    color: $color-tertiary-dark;
+    font-size: 3rem;
+
+    @include respond(big-desktop) {
+      font-size: 4rem;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 5rem;
+      height: 0.5rem;
+      background: $color-tertiary-dark;
+    }
+  }
+  &_contact {
+    margin-top: auto;
+    font-size: 1.5rem;
+
+    @include respond(big-desktop) {
+      font-size: 2rem;
+    }
+    color: $color-tertiary-dark;
+  }
+  &_app_group {
+    margin-bottom: 15px;
+    // font-family: $font-primary;
+    .message {
+      margin-top: 40px;
+    }
+    .button {
+      margin-bottom: 0;
+      text-align: right;
+    }
+  }
+  &_app_control {
+    font-family: "Dosis", sans-serif;
+    width: 100%;
+    // font-family: $font-primary;
+    padding: 1.3rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid $color-tertiary-dark;
+    color: #ddd;
+    font-size: 1.5rem;
+
+    @include respond(big-desktop) {
+      font-size: 2rem;
+    }
+    outline: none;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: $color-tertiary-dark;
+    }
+    &:focus {
+      border-bottom-color: #ddd;
+    }
+  }
+
+  &_app_button {
+    font-family: "Dosis", sans-serif;
+    background: none;
+    border: none;
+    color: $color-tertiary-dark;
+    padding: 0.8rem;
+    border: 2px solid $color-tertiary-dark;
+    font-size: 1.4rem;
+    @include respond(big-desktop) {
+      font-size: 2rem;
+    }
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+    // font-family: $font-primary;
+    font-weight: 800;
+    &:hover {
+      // color: $color-pink-dull;
+    }
+  }
+}
+.notify {
+  // font-family: $font-primary !important;
+  width: 100%;
+  position: absolute;
+  font-size: 1.3rem;
+  color: red;
+  opacity: 0;
+  transition: all 1s;
+  text-align: center;
+  // background-color: rgba(silver, 0.8);
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 520px) {
+  .form_body {
+    flex-direction: column;
+  }
+
+  .form_body--item.left {
+    margin-bottom: 30px;
+  }
+
+  .form_title {
+    flex-direction: row;
+  }
+
+  .form_title span {
+    margin-right: 12px;
+  }
+
+  .form_title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_body {
+    padding: 40px;
+  }
+
+  .form_body--item {
+    padding: 0;
+  }
+}

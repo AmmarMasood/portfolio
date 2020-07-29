@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+
+    <title>Ammar Masood</title>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        name=""
+        id="navi-toggle"
+        class="navigation__checkbox"
+      />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navigation -->
+
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="header__text-box--txt">
+          <span class="header__text-box--txt--main">Ammar Masood</span>
+          <span class="header__text-box--txt--sub">Full stack developer</span>
+        </h1>
+
+        <div class="header__icons">
+          <div class="header__icons--icon">
+            <a href="https://www.linkedin.com/in/ammar-masood-772b59158/" target="_blank"><img src="./img/icons/icons8-linkedin-100.png" alt="Resume" /></a>
+          </div>
+          <div class="header__icons--icon">
+            <a href="https://github.com/AmmarMasood" target="_blank"><img src="./img/icons/icons8-github-100.png" alt="Resume" /></a>
+          </div>
+
+          <div class="header__icons--icon">
+            <a href="https://www.facebook.com/ammar.masood.96" target="_blank"><img src="./img/icons/icons8-facebook-100.png" alt="Resume" /></a>
+          </div>
+        </div>
+        <div><a href="./img/Resume.pdf" class="button" download>Resume</a></div>
+      </div>
+      <div class="header__image">
+        <img src="./img/pixeltrue-web-development-1.png" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <!-- about section -->
+      <div class="about">
+        <div class="section">
+          <div class="saucer"></div>
+          <div class="cup">
+            <div class="cup-center">
+              <div class="coffee"></div>
+              <div class="froth"></div>
+              <div class="coffee-dark-top"></div>
+              <div class="hot-steam steam-move"></div>
+            </div>
+            <div class="cup-handle"></div>
+          </div>
+          <div class="teaspoon">
+            <div class="spoon-center"></div>
+            <div class="spoon-handle"></div>
+          </div>
+        </div>
+        <div class="about__text">
+          <div class="about__text--txt ">
+            <div class="contact__img">
+              <img src="./img/img.png" alt="" />
+            </div>
+            Hi. I'm a software engineer based in Karachi, Pakistan. Specializing
+            in developing and occasionally designing exceptional, high-quality
+            websites and applications. <br />
+            I love tech-startups and community.My passion is split between my
+            love for amazing technology and my drive to help startup communities
+            grow and learn from eachother.
+          </div>
+        </div>
+        <!-- <div class="header__text-box">
+          <h1 class="heading-primary">
+            <span class="heading-primary--main">Ammar Masood</span>
+            <span class="heading-primary--sub">Full stack web developer</span>
+          </h1>
+        </div> -->
+      </div>
+      <!-- about section -->
+
+      <div class="projects">
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color1">
+            <img src="./img/portitem1.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">Developer Network</div>
+            <div class="projects__card--txt-txt">
+              A Social Media Network for developers to connect and engage.
+              <br />
+              Used React with Redux and Bootstrap in Front-End. ExpressJs and MongoDB on backend.
+            </div>
+          </div>
+          <div class="projects__card--tech">
+            <img src="./img/icons/icons8-react-120.png" alt="" />
+            <img src="./img/icons/icons8-nodejs-96.png" alt="" />
+            <img src="./img/icons/icons8-redux-144.png" alt="" />
+            <img src="./img/icons/icons8-mongodb-144.png" alt="" />
+            <img src="./img/icons/icons8-bootstrap-144.png" alt="" />
+  
+            <a href="https://quiet-plains-68665.herokuapp.com/" target="_blank"><button class="learn-more projects__link">Open Project</button></a>
+          </div>
+        </div>
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color2">
+            <img src="./img/portitem2.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">Emaily</div>
+            <div class="projects__card--txt-txt">
+              Allows user to create multiple surverys and collect data.
+              <br />
+             Integrated with Google OAuth 2.0 for authentication, Stripe for payment and Sendgrid Api to send multiple emails. Used React with Redux on frontend, ExpressJs and MongoDb on backend.
+            </div>
+          </div>
+          <div class="projects__card--tech">
+            <img src="./img/icons/icons8-react-120.png" alt="" />
+            <img src="./img/icons/icons8-nodejs-96.png" alt="" />
+            <img src="./img/icons/icons8-redux-144.png" alt="" />
+            <img src="./img/icons/icons8-mongodb-144.png" alt="" />
+            
+            <a href="https://dry-mesa-64078.herokuapp.com/" target="_blank"><button class="learn-more projects__link">Open Project</button></a>
+          </div>
+        </div>
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color3">
+            
+            <img src="./img/portitem4.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">React DND</div>
+            <div class="projects__card--txt-txt">
+              Allows user to create multiple list as well as multiple list items. Each item is draggable and droppable.
+              <br />
+              Used React-beautiful-dnd library that enables dragging of items both in vertical and horizontal direction. Used Material-UI library to style the app.
+            </div>
+          </div>
+          <div class="projects__card--tech">
+            <img src="./img/icons/icons8-react-120.png" alt="" />
+            <img src="./img/icons/icons8-material-ui-144 (1).png" alt="" />
+          
+           <a href="https://naughty-easley-c1eec9.netlify.app/" target="_blank"> <button class="learn-more projects__link">Open Project</button></a>
+          </div>
+        </div>
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color4">
+            <img src="./img/portitem6.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">Hooks News</div>
+            <div class="projects__card--txt-txt">
+               A Hacker News Clone. Allows you to create, upvote and comment on a post.
+              <br />
+              A serverless app build using react and firebase. Firebase functions and firestore is used. React context-api and hooks are used for state management.
+            </div>
+          </div>
+          <div class="projects__card--tech">
+            <img src="./img/icons/icons8-react-120.png" alt="" />
+            <img src="./img/icons/icons8-firebase-144.png" alt="" />
+           
+            <a href="https://loving-mayer-a032e4.netlify.app" target="_blank"><button class="learn-more projects__link">Open Project</button></a>
+          </div>
+        </div>
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color5">
+            <img src="./img/portitem7.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">DevCamper API</div>
+            <div class="projects__card--txt-txt">
+              Restfull API build using NodeJS, ExpressJS and MongoDB. Contains CRUD functionality, JWT authentication and advance pagination. Deployed on Postman documentation.
+              <br />
+              Build this API while completing NodeJS Masterclass Course from Travasy Media on Udemy. 
+            </div>
+            <div class="projects__card--tech">
+              <img src="./img/icons/icons8-nodejs-96.png" alt="" />
+              <img src="./img/icons/icons8-mongodb-144.png" alt="" />
+              <img src="./img/icons/postman-seeklogo.com.svg" alt="" />
+              
+             <a href="https://face-recognition--app.herokuapp.com/" target="_blank"><button class="learn-more projects__link">Open Project</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card ">
+          <div class="projects__card--img projects__card--color6">
+            <img src="./img/portitem3.png" alt="" />
+          </div>
+          <div class="projects__card--txt">
+            <div class="projects__card--txt-heading">Face Detector</div>
+            <div class="projects__card--txt-txt">
+              A small project that uses Clarifai Image Recognition API to detect faces.
+              <br />
+              Used React, ExpressJs and PostgresSQL.
+            </div>
+          </div>
+          <div class="projects__card--tech">
+            <img src="./img/icons/icons8-react-120.png" alt="" />
+            <img src="./img/icons/icons8-nodejs-96.png" alt="" />
+            <img src="./img/icons/icons8-postgresql-144.png" alt="" />
+            <a href="https://face-recognition--app.herokuapp.com/" target="_blank"><button class="learn-more projects__link">Open Project</button></a>
+          </div>
+        </div>
+      </div>
+      <section class="contact" id="contacts">
+          <div class="contact__img contact__img--padding">
+              <img src="./img/img.png" alt="" />
+            </div>
+          <div class="form"  data-aos="fade-up">
+              
+              <div class="form_screen">
+                <div class="form_body">
+                  <div class="form_body--item left">
+                    <div class="form_title">
+                      <span>CONTACT</span>
+                      <span>ME</span>
+                    </div>
+                    <div class="form_contact">CONTACT EMAIL : ammar.masood98@gmail.com</div>
+                  </div>
+                  <form id="contact-form" class="form_body--item">
+                    <div class="form_app">
+                      <div class="form_app_group">
+                        <input class="form_app_control" placeholder="NAME" id="name"  type="text" name="name" required>
+                      </div>
+                      <div class="form_app_group">
+                        <input class="form_app_control" placeholder="EMAIL" id="email"  type="email" name="email" required>
+                      </div>
+                      <div class="form_app_group message">
+                        <input class="form_app_control" placeholder="MESSAGE" id="subject" type="text" name="subject" required>
+                      </div>
+                      <div class="form_app_group buttons">
+                        <button class="form_app_button" type="submit">SUBMIT</button>
+                      </div>
+                    </div>
+                  
+                  </form>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__img">
+        <img src="./img/my_pic.jpg" alt="My_Image" />
+      </div>
+      <div class="footer__txt">Designed and developed by Ammar Masood</div>
+      <div class="footer__bottom">© 2019 Ammar Masood</div>
+    </footer>
+  </body>
+</html>

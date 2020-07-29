@@ -1,0 +1,137 @@
+.header {
+  // --------------------------------------------------------------------------------------------
+  // vh = relative length, that every point, the height of this element,
+  // should be 95% almost 100% of the viewport height, user's visible area of a web page
+  // give the element a little bit of breathing room, try resizing the browser
+  // the white bar/space is the remaining 5% of viewport height
+  // --------------------------------------------------------------------------------------------
+  height: 100vh;
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary, 0.8),
+  //     rgba($color-primary, 0.8)
+  //   ),
+  //   url(../../img/header_img.png);
+  // background-size: contain;
+  // background-position: center; // top of image won't be cropped when resizing
+  // position: relative; // origin
+  // background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Dosis", sans-serif;
+
+  @include respond(phone) {
+    // border: 1px solid black;
+    display: block;
+    text-align: center;
+  }
+
+  &__text-box {
+    // border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 5rem;
+
+    @include respond(phone) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--txt {
+      // border: 1px solid red;
+
+      &--main {
+        color: $color-tertiary-dark;
+        display: block;
+        font-size: 8rem;
+        // letter-spacing: 0.5rem;
+        animation: moveInLeft 1s ease-out; // starts at left
+        font-weight: 600;
+        @include respond(tab-land) {
+          font-size: 6rem;
+        }
+        @include respond(tab-port) {
+          font-size: 6rem;
+        }
+        @include respond(phone) {
+          font-size: 5.5rem;
+        }
+      }
+      &--sub {
+        // border: 1px solid black;
+        display: block;
+        font-size: 5rem;
+        font-weight: 400;
+        animation: moveInLeft 1s ease-out; // starts at left
+        @include respond(phone) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    padding-bottom: 20px;
+    animation: moveInLeft 1s ease-out; // starts at left
+
+    &--icon {
+      animation: flowing 5s linear alternate infinite;
+      cursor: pointer;
+
+      img {
+        @include respond(tab-land) {
+          width: 10rem;
+        }
+        @include respond(tab-port) {
+          width: 10rem;
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond(phone) {
+      display: none;
+    }
+    // background-color: rgba(55, 95, 136, 0.5);
+    img {
+      height: 50rem;
+      @include respond(tab-land) {
+        height: 30rem;
+      }
+      @include respond(tab-port) {
+        height: 30rem;
+      }
+    }
+  }
+}
+
+.button {
+  margin: 0 15px;
+  background: rgb(82, 34, 208);
+  border-radius: 100px;
+  padding: 20px 60px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Hover state animation applied here */
+.button:hover {
+  -webkit-animation: hover 1200ms linear 2 alternate;
+  animation: hover 1200ms linear 2 alternate;
+}
+
+/* Active state animation applied here */
+.button:active {
+  -webkit-animation: active 1200ms ease 1 alternate;
+  animation: active 1200ms ease 1 alternate;
+  background: #5f9be0;
+}
