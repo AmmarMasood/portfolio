@@ -264,9 +264,9 @@
                       <span>CONTACT</span>
                       <span>ME</span>
                     </div>
-                    <div class="form_contact">CONTACT EMAIL : ammar.masood98@gmail.com</div>
+                    <div class="form_contact">EMAIL : ammar.masood98@gmail.com</div>
                   </div>
-                  <form id="contact-form" class="form_body--item">
+                  <form id="contact-form" class="form_body--item" action="POST" data-netlify="true">
                     <div class="form_app">
                       <div class="form_app_group">
                         <input class="form_app_control" placeholder="NAME" id="name"  type="text" name="name" required>
@@ -276,6 +276,9 @@
                       </div>
                       <div class="form_app_group message">
                         <input class="form_app_control" placeholder="MESSAGE" id="subject" type="text" name="subject" required>
+                      </div>
+                      <div class="form_app_group">
+                        <div data-netlify-recaptcha="true"></div>
                       </div>
                       <div class="form_app_group buttons">
                         <button class="form_app_button" type="submit">SUBMIT</button>
